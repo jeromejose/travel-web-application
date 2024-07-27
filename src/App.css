@@ -1,15 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body{
-    background: black;
     color:blanchedalmond;
     font-family: 'Oswald', sans-serif;
     font-weight:500; /** 200-700 **/
+    background: var(--PrimaryColor);
 }
 
 :root{
     --PrimaryColor: #31395e;
     --SecondaryColor:#2c658b;
+    --TertiaryColor: #65a7a8;
+    --lightPurple: #bcbce3;
     --gradientColor: linear-gradient(to right, #2c658b);
+    --cream: #c1cfeb;
+
 }
 
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
+.icon{
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3em;
+    border:none;
+    outline: none;
+    cursor:pointer;
+}
+
+.btn a{
+    color: var(--cream);
+    font-weight:600;
+}
+
+.btn:hover{
+    background: var(--SecondaryColor);
+}
+
+img, video{
+    width:100%;
+    height:auto;
+}
+
+input{
+    font-size:100%
+}
